@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="强风吹拂/style.css">
+  <title>~强风吹拂~</title>
+  <style>
+    /* 全局基础样式 */
+    body {
+      font-family: "宋体";
+      font-size: 14px;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    /* 导航栏样式，设置字体为行楷，颜色为白色 */
+    nav {
+      background-color: #333;
+      padding: 10px 0;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+  color: white!important;
+  text-decoration: none;
+  font-family: "行书";
+  font-size: 18px;
+   }
+    /* 主要内容区域包裹，设置内边距让内容不贴边 */
+ .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    /* 动画总赏部分背景变为淡蓝色 */
+ .overall_box1 {
+      background-color: #e6f2ff;
+      padding: 10px;
+    }
+    /* 让剧照图片等相关元素合理居中显示（除动画亮点速览文字部分） */
+ .qfcf1,
+ .title:nth-of-type(2),
+ .wenzi {
+      text-align: center;
+    }
+    /* 设置文字为宋体、字号变小并保持居中相关设置（除动画亮点速览文字部分），将对应文字字体改为仿宋 */
+ .wenzi {
+      font-family: "仿宋";
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    /* 针对特定文字加粗 */
+ .wenzi p em {
+      font-weight: bold;
+    }
+    /* 针对特定文字加下划线 */
+ .wenzi p strong {
+      text-decoration: underline;
+    }
+    /* 去除sup、sub默认样式 */
+    sup,
+    sub {
+      font-size: inherit;
+      vertical-align: baseline;
+    }
+    /* 动画亮点速览整体部分样式，使用flex布局实现标题和内容左右排列 */
+ .animation-highlights {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-left: 20px;
+    }
+    /* 动画亮点速览标题样式，调整为上下排列 */
+ .animation-highlights.title {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 60px;
+    }
+ .animation-highlights.title span {
+      width: 100%;
+      text-align: right;
+    }
+    /* 动画亮点速览内容（有序列表）样式，增大字号 */
+ .animation-highlights ol {
+      width: 70%;
+      text-align: left;
+      font-size: 16px;
+    }
+    /* 新增样式，用于图片缩小以及其他相关图片样式设置 */
+ .img img {
+      width: 200px;
+      height: auto;
+    }
+    /* 新增样式，用于右边新添加图片的基本样式设置，增大图片尺寸并使其紧挨着亮点 */
+ .right-img {
+      width: 280px;
+      height: auto;
+      margin-left: 5px;
+    }
+    /* 动图横向排列及鼠标悬置放大效果相关样式 */
+ .GIF {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+ .GIF li {
+      margin: 0 10px;
+    }
+ .GIF li img {
+      transition: transform 0.3s ease;
+      max-width: 100%;
+    }
+ .GIF li img:hover {
+      transform: scale(1.2);
+    }
+    /* 基本信息部分背景变为淡紫色 */
+ .overall_box#basicInfo {
+      background-color: #e6e6ff;
+      padding: 10px;
+    }
+    /* 页脚样式 */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul class="daohanglan">
+      <li><a href="首页.html" id="shouming">風が強く吹いている</a></li>
+      <li><a href="首页.html">首页</a></li>
+      <li><a href="#jiben">动画总赏和基本信息</a></li>
+    </ul>
+  </nav>
+  <div class="content-wrapper">
+    <div class="overall_box overall_box1">
+      <div class="blank"></div>
+      <div class="title">动画总赏</div>
+      <div class="img">
+        <img src="https://puui.qpic.cn/vcover_vt_pic/0/esuqz387xcy6vm61576056324/0">
+      </div>
+      <div class="wenzi">
+        <span class="span1"><mark>《强风吹拂》</mark></span>
+        <p><em>《强风吹拂》</em>是日本作家三浦紫苑创作的长篇小说，首版时间为2006年，于2018年5月宣布了动画化的消息。</p>
+        <p>讲述了宽政大学宿舍“竹青庄”的十名舍友凑成一支杂牌长跑队，在队长清濑灰二的魔鬼训练下，从零开始向日本历史最悠久的长跑接力赛<strong>“箱根驿传”</strong>挺进。作者通过塑造个性鲜明的人物角色，使得故事洋溢着青春活力。不仅关注比赛，还有关于团结，队员们一同经历残酷的训练、经受更残酷的现实，在跑步中面对自我，面对彼此的情感羁绊，<em>一起流汗流泪，一齐“攻顶”</em>。攻顶过程充满了各种精彩瞬间。</p>
+      </div>
+      <div class="blank"></div>
+      <div class="animation-highlights">
+        <div class="title">
+          <span>动</span>
+          <span>画</span>
+          <span>亮</span>
+          <span>点</span>
+        </div>
+        <ol>
+          <li>热血运动题材，聚焦长跑接力赛“箱根驿传”，点燃观众的运动激情。</li>
+          <li>塑造十位性格迥异的角色，每个人都有着独特成长历程与内心世界，使故事极具感染力。</li>
+          <li>不仅展现训练与，更深入刻画队员间的情感羁绊，诠释团结与拼搏的真谛。</li>
+          <li>动画制作精良，Production I.G 操刀，搭配林友树的音乐，视听体验绝佳。</li>
+        </ol>
+        <img class="right-img" src="https://pic4.zhimg.com/v2-b7be0e7ff1b6e792505b518d187a2abe_r.jpg?source=1940ef5c" >
+        <img class="right-img" src="https://puui.qpic.cn/vpic_cover/b35268yzky5/b35268yzky5_1691685855_hz.jpg/1280">
+      </div>
+    </div>
+    <div class="blank"></div>
+    <div class="overall_box" id="basicInfo">
+      <span class="span1">基本信息</span>
+      <table border="0">
+        <tr bgcolor="white">
+          <td>中文名</td>
+          <td><a href="https://baike.baidu.com/item/%E5%BC%BA%E9%A3%8E%E5%90%B9%E6%8B%82/22621985">强风吹拂</a></td>
+          <td>原版名称</td>
+          <td><a href="https://baike.baidu.com/item/%E5%BC%BA%E9%A3%8E%E5%90%B9%E6%8B%82/22621985">風が強く吹いている</a></td>
+        </tr>
+        <tr>
+          <td>别名</td>
+          <td>Run with the Wind</td>
+          <td>动画制作</td>
+          <td><a href="https://baike.baidu.com/item/Production%20I.G/6999303">Production I.G</a></td>
+        </tr>
+        <tr>
+          <td>类型</td>
+          <td>青春，运动，竞技</td>
+          <td>原作者</td>
+          <td><a href="https://baike.baidu.com/item/%E4%B8%89%E6%B5%A6%E7%B4%ABE8%8B%91/2831610">三浦紫苑</a></td>
+        </tr>
+        <tr>
+          <td>出品公司</td>
+          <td>宽政大学田径竞技社后援会</td>
+          <td>地区</td>
+          <td>日本</td>
+        </tr>
+        <tr>
+          <td>角色设计</td>
+          <td>千叶崇洋</td>
+          <td>导演</td>
+          <td><a href="https://baike.baidu.com/item/%E9%87%8E%E6%9D%91%E5%92%8C%E4%B9%9F/18905043">野村和也</a></td>
+        </tr>
+        <tr>
+          <td>编剧</td>
+          <td><a href="https://baike.baidu.com/item/%E5%96%9C%E5%AE%89%E6%B5%A9%E5%B9%B3/6532660">喜安浩平</a></td>
+          <td>集数</td>
+          <td>全23话</td>
+        </tr>
+        <tr>
+        <td>首播电视台</td>
+        <td>日本电视台</td>
+        <td>音乐</td>
+        <td><a href="https://baike.baidu.com/item/%E6%9E%97%E5%8F%8B%E6%A0%91/6711632">林友树</a></td>
+      </tr>
+      <tr>
+        <td>播放期间</td>
+        <td>2018年10月2日-2019年3月26日</td>
+        <td>代理发行</td>
+        <td>羚邦（中国）</td>
+      </tr>
+    </table>
+    </div>
+    <div class="gif">
+      <section>
+        <ul class="GIF">
+          <li><img src="强风吹拂/QQ图片20230105001702.gif"></li>
+          <li><img src="强风吹拂/QQ图片20230105001716.gif"></li>
+          <li><img src="强风吹拂/QQ图片20230105001720.gif"></li>
+        </ul>
+      </section>
+    </div>
+  </div>
+  <footer>
+    <p class="footer">"你喜欢跑步吗？"</p>
+  </footer>
+</body>
+
+</html>
