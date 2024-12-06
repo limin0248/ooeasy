@@ -1,0 +1,196 @@
+@charset "utf-8";
+.blank{
+	height: 30px;
+}
+body {
+  	width: 100%;
+  	height: 100vh;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-color: #6AB9F2;
+  	overflow-x: hidden;
+}
+nav{
+	position: absolute;
+	position: sticky;
+	z-index: 100011111;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 0 5vw;
+	height: 60px;
+	background-color: rgba(255,255,255,0.445);
+	box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+}
+footer{
+    width: 100%;
+  	height: 80px;
+  	background-color: white;
+  	bottom: 0;
+}
+.footer{
+	margin: auto;
+  	width: fit-content;
+  	line-height: 80px;
+  	color: rgb(255, 165, 180);
+  	font-size: 30px;
+  	font-family:"仿宋";
+}
+.daohanglan{
+	flex: 1;
+	display: flex;
+	justify-content: space-around;
+	max-height: 550px;
+}
+.daohanglan li{
+	width: 40%;
+	list-style: none;
+	color:#C9C9C9;
+	font-weight: 600;
+	text-align: center;
+}
+.daohanglan li a{
+	color:#000000;
+}
+.burger div {
+  	width: 25px;
+  	height: 3px;
+  	background-color: #dadbdd;
+  	margin: 4px;
+}
+.burger {
+  	display: none;
+}
+#shouming{
+	position: absolute;
+	left: 25px;
+	font-family:'华文行楷';
+	font-weight: 900;
+	font-size: 25px;
+}
+.overall_box1{
+	width: 1519.2px;
+    padding: 40px;
+    height: 400px;
+    background-image: linear-gradient(rgb(31, 211, 238),rgb(212,242,123));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.box1, .box2, .box3{
+	width: 300px;
+    height: 380px;
+    background-color: #b66e62;  
+    color: cornsilk;
+    font-size: 30px;
+    text-align: center;
+    overflow: hidden;
+}
+.box1 img, .box2 img, .box3 img{
+    margin-bottom: 27px;
+    height: 250px;
+    width: 100%;
+    opacity: .95;
+    transition: .6s;
+}
+.wenzi{
+    display: flex;
+    flex-direction: row;
+    width: 1519.2px;
+    height: 500px;
+    background-image: linear-gradient(rgb(212,242,123),rgb(255, 242, 146));
+    justify-content: space-around;
+	
+}
+.box4 ,.box5{
+    width: 500px;
+    height: 350px;
+    background-image: linear-gradient(rgb(221,237,106),rgba(255, 249, 200, 0.801));
+    font-size: 35px;
+    margin-top: 50px;
+    opacity: .5;
+    color: rgb(141, 20, 20);
+	text-align: center;
+}
+.biaoti{
+    width: 1519.2px;
+    height: 450px;
+    background-color: transparent;
+    background-attachment: fixed;
+    background-image: url(../img/beijing6.jpg);
+    background-size: contain;
+    background-position: center;
+    width: 1330px;
+    margin: 0 auto;
+    padding-top: 200px;
+    background-repeat: no-repeat;
+ }
+.biaoti_{
+    width: 230px;
+    height: 90px;
+    transition: .9s;
+    border-radius: 9px;
+    background-color: rgba(30,32,33,.6);
+    margin: 0 auto;
+    font-size: large; 
+    font-size: 40px;    
+    text-align: center;
+    color: white;
+ }
+.gif{
+    width: 1519.2px;
+    height: 900px;
+    background-image: linear-gradient(rgb(253, 242, 153),rgb(125, 205, 248));
+}
+.gif{
+    width: 100%;
+    height: 900px;
+    background-image: linear-gradient(rgb(253, 242, 153),rgb(125, 205, 248));
+}
+section
+{
+    position: relative;
+    width: 100%;
+}
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+section .GIF
+{
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .GIF li{
+    list-style: none;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 3px 3px 0;
+    opacity: 0.9;
+    transition: 0.5s;
+}
+section .GIF li:hover{
+    opacity: 1;
+}
+section .GIF li img{
+    width: 450px;
+    transition: 0.5s;
+}
+section .GIF li img:hover{
+    width: 700px;
+}
+section .gif1 img{
+	width: 600px;
+}

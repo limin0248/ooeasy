@@ -1,0 +1,88 @@
+@charset "utf-8";
+body,html{
+	height: 100%;
+  	margin: 0;
+  	font-size: 16px;
+  	font-weight: 400;
+  	line-height: 1.8em;
+  	color: #666;
+}
+.blank1,.blank2,.blank3{
+	position:relative;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.blank1{
+	min-height: 100%;
+	background-image: url(https://pic1.zhimg.com/80/v2-959d3e42a41c7585131b619114fdd3f5_1440w.webp?source=1940ef5c);
+}
+.blank2{
+	min-height: 100%;
+	background-image: url(https://picx.zhimg.com/80/v2-541919f773423074ae852db8c3544cd5_1440w.webp?source=1940ef5c);
+}
+.blank3{
+	min-height: 100%;
+	background-image: url(https://ts1.cn.mm.bing.net/th/id/R-C.8e12d502e88749dd78155d4d14bba897?rik=8qZ0MwGJF%2fqpHA&riu=http%3a%2f%2fqimg.hxnews.com%2f2019%2f0416%2f1555400575787.jpg&ehk=5e8QOMuJR%2f3QXNnOoTSIE9TtIakx1oUi%2bO0Neq27G9c%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1);
+}
+.section{
+	text-align: center;
+	padding: 50px 80px;
+}
+.section1{
+	background-color: black;
+	color: white;
+}
+.section2{
+	background-color: gainsboro;
+	color: black;
+}
+.section3{
+	background-color: #8FE0FF;
+	color: #286BFF;
+}
+.qfcftext{
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	letter-spacing: 10px;
+	text-transform: uppercase;
+}
+.qfcftext .border{
+	color: white;
+	padding: 20px;
+	font-weight: 900;
+}
+@media only screen and (max-device-width: 1366px){
+  .blank1, .blank2, .blank3{
+    background-attachment: scroll;
+  }
+
+    .qfcftext{
+        letter-spacing: 0.188em;
+        font-size: 1.125em;
+        text-align: center;
+    }
+
+    .qfcftext .border{
+        color: black;
+        padding: 0.625em;
+    }
+}
+@media only screen and (min-device-width: 1366px){
+  .qfcftext{
+    font-size: 2vw;
+    letter-spacing: 10px;
+  }
+  .qfcftext .border{
+    padding: 25px;
+  }
+} 
+.color1{
+	font-size: 30px;
+	color:gold;
+}

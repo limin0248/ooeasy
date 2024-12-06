@@ -1,0 +1,177 @@
+@charset "utf-8";
+.overall_box {
+	 width: 90%;
+    margin: auto;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+}
+.overall_box p {
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: 500;
+}
+a:hover {
+  	transform: scale(1.05);
+    webkit-box-reflect: below 1px -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+    webkit-box-reflect: below 1px -o-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+    webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+}
+a:active {
+  	color: #b000ff;
+}
+a:visited {
+  	color: rgb(255 0 0);
+}
+span:hover {
+  	transform: scale(1.05);
+}
+.span1{
+	font-size: 40px;
+	font-family:'华文行楷';
+} 
+body {
+  	width: 100%;
+  	height: 100vh;
+  	background-image: url("https://c-ssl.duitang.com/uploads/blog/202201/01/20220101233437_a228c.jpeg");
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-color: rgb(227 227 227 / 70%);
+  	overflow-x: hidden;
+}
+footer{
+    width: 100%;
+  	height: 80px;
+  	background-color: white;
+  	bottom: 0;
+}
+.footer{
+	 margin: auto;
+  width: fit-content;
+  line-height: 80px;
+  color: rgb(255, 165, 180);
+  font-size: 30px;
+  font-family:"仿宋";
+}
+.headblank {
+  	position: absolute;
+  	top: 0;
+  	width: 100%;
+	height: 70px;
+	background-color: white;
+}
+tr {
+	font-size: 20px;
+}
+.title {
+	font-family: '华文行楷' !important;
+	color: rgb(0, 0, 0) !important;
+	font-size: 40px !important;
+	font-weight: 500 !important;
+	margin-bottom: 15px;
+	text-align: center;
+}
+nav{
+	position: absolute;
+	position: sticky;
+	z-index: 100011111;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 0 5vw;
+	height: 60px;
+	background-color: rgba(255,255,255,0.445);
+	box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+}
+.daohanglan{
+	flex: 1;
+	display: flex;
+	justify-content: space-around;
+	max-height: 550px;
+}
+.daohanglan li{
+	width: 40%;
+	list-style: none;
+	color:#C9C9C9;
+	font-weight: 600;
+	text-align: center;
+}
+.daohanglan li a{
+	color:#000000;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #dadbdd;
+  margin: 4px;
+}
+.burger {
+  display: none;
+}
+#shouming{
+	position: absolute;
+	left: 25px;
+	font-family:'华文行楷';
+	font-weight: 900;
+	font-size: 25px;
+}
+.overall_box1>.wenzi>p{
+	margin: auto;
+	width: 90%;
+	text-align: start!important;
+	color: black;
+	font-size: 30px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+.overall_box1>.blank{
+	height: 30px;
+}
+.overall_box1>.img{
+	display: inline-block;
+	width:45%;
+}
+.overall_box1>.img img{
+	width: 95%;
+	overflow: hidden;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+.overall_box1>.wenzi{
+	float: right;
+	width: 50%;
+	margin-left: 30px;
+	margin-bottom: 35px;
+	margin-top: 30px;
+}
+.overall_box1>.qfcf1{
+	width: 100%;
+}
+.overall_box1>.qfcf1 >img{
+	margin: 0 auto;
+	display: inline-block;
+	width:49.5%;
+}
+#basicInfo{
+	padding: 30px;
+	margin-top: 60px;
+}
+#basicInfo span {
+	font-size: 30px;
+	color:#3E3E3E;
+	margin-top: 20px;
+}
+#basicInfo table{
+	width: 80%;
+	margin: 30px auto 20px;
+}
+#basicInfo table tr td:hover{
+	background-color:#BBEFFF;
+}

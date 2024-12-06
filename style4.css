@@ -1,0 +1,125 @@
+@charset "utf-8";
+.blank{
+	height: 30px;
+}
+body {
+  	width: 100%;
+  	height: 100vh;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-color: #6AB9F2;
+  	overflow-x: hidden;
+}
+nav{
+	position: absolute;
+	position: sticky;
+	z-index: 100011111;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 0 5vw;
+	height: 60px;
+	background-color: rgba(255,255,255,0.445);
+	box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+}
+footer{
+    width: 100%;
+  	height: 80px;
+  	background-color: white;
+  	bottom: 0;
+}
+.footer{
+	margin: auto;
+  	width: fit-content;
+  	line-height: 80px;
+  	color: rgb(255, 165, 180);
+  	font-size: 30px;
+  	font-family:"仿宋";
+}
+.daohanglan{
+	flex: 1;
+	display: flex;
+	justify-content: space-around;
+	max-height: 550px;
+}
+.daohanglan li{
+	width: 40%;
+	list-style: none;
+	color:#C9C9C9;
+	font-weight: 600;
+	text-align: center;
+}
+.daohanglan li a{
+	color:#000000;
+}
+.burger div {
+  	width: 25px;
+  	height: 3px;
+  	background-color: #dadbdd;
+  	margin: 4px;
+}
+.burger {
+  	display: none;
+}
+#shouming{
+	position: absolute;
+	left: 25px;
+	font-family:'华文行楷';
+	font-weight: 900;
+	font-size: 25px;
+}
+.overall_box{
+	width: 1519.2;
+    height: 5555px;
+    background-color:transparent;
+    justify-content: space-around;
+    padding-left: 100px;
+}
+.small_box{
+	width: 1400px;
+    height: 525px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 60px;
+    margin-top: 20px;
+}
+.one{
+	width: 600px;
+    height: 525px;
+    background-color:white;
+}
+.one img{
+	width: 100%;
+    height: 100%;
+}
+.two img{
+	width: 600px;
+    height: 525px;
+	background-color: white;
+}
+.wenzi{
+	width: 600px;
+    height: 325px;
+    background-color: gray;
+    color: black;
+    padding-top: 200px;
+    font-size: 20px;
+	font-family:"仿宋";
+    text-align: center;
+}
+.picture{
+	width: 1500px;
+	height: 600px;
+	text-align: center;
+}
+.picture p{
+	width: 1500px;
+	height: 600px;
+	line-height: 600px;
+}
+.picture p img{
+	vertical-align: middle;
+}

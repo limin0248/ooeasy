@@ -1,0 +1,115 @@
+@charset "utf-8";
+.blank{
+	height: 30px;
+}
+body {
+  	width: 100%;
+  	height: 100vh;
+  	background-image: url("https://c-ssl.duitang.com/uploads/blog/202201/01/20220101233437_a228c.jpeg");
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  	background-color: rgb(227 227 227 / 70%);
+  	overflow-x: hidden;
+}
+nav{
+	position: absolute;
+	position: sticky;
+	z-index: 100011111;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 0 5vw;
+	height: 60px;
+	background-color: rgba(255,255,255,0.445);
+	box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+}
+footer{
+    width: 100%;
+  	height: 80px;
+  	background-color: white;
+  	bottom: 0;
+}
+.footer{
+	 margin: auto;
+  width: fit-content;
+  line-height: 80px;
+  color: rgb(255, 165, 180);
+  font-size: 30px;
+  font-family:"仿宋";
+}
+.daohanglan{
+	flex: 1;
+	display: flex;
+	justify-content: space-around;
+	max-height: 550px;
+}
+.daohanglan li{
+	width: 40%;
+	list-style: none;
+	color:#C9C9C9;
+	font-weight: 600;
+	text-align: center;
+}
+.daohanglan li a{
+	color:#000000;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #dadbdd;
+  margin: 4px;
+}
+.burger {
+  display: none;
+}
+#shouming{
+	position: absolute;
+	left: 25px;
+	font-family:'华文行楷';
+	font-weight: 900;
+	font-size: 25px;
+}
+.picture{
+	width:100%;
+}
+.picture>img{
+	margin: 0 auto;
+	display: inline-block;
+	width:49.5%;
+}
+.wi{
+	border-radius: 10px;
+	width: 1600px;
+    height: 1000px;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+	float: center;
+	box-shadow: 5px 5px 10px 10px #FFF; 
+}
+.writerInfo{
+	border-radius: 20px;
+	width: 1400px;
+    height: 900px;
+	margin-right: 100px;
+	margin: 10px;
+	background-image: linear-gradient(rgb(205, 245, 195),blanchedalmond);
+    position: relative;
+    color: black;
+    padding-top: 60px;
+    line-height: 55px;
+	text-align: center;
+}
+.writerInfo>.writer{
+	font-size: 50px;
+	text-align: center;
+	font-family: "华文行楷";
+	color: #494949;
+}
+.writerInfo p{
+	font-size: 30px;
+	font-family: "仿宋";
+}
