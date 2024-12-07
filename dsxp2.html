@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页布局</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 导航栏样式 */
+      .navbar {
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+      .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 25px;
+            font-size: 22px; /* 增大字号 */
+            font-family: "华文行楷";
+        }
+
+        /* 第二部分样式 */
+      .section-two {
+            opacity: 0.8; /* 使用opacity设置整个元素及其内容的透明度，这里透明度为0.8，可调整 */
+            background-color: #d0ebff;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            font-family: "楷体";
+            font-size: 16px; /* 适当增大字号 */
+        }
+
+      .section-two img {
+            width: 20%; /* 这里设置宽度占父元素宽度的60%，可根据实际调整合适比例来接近16:9效果 */
+            height: auto;
+            margin-right: 30px;
+            aspect-ratio: 9 / 16; /* 明确指定宽高比为16:9，部分现代浏览器支持此属性，用于更好地维持比例 */
+        }
+
+        /* 第三部分样式 */
+      .section-three {
+            background-color: lightgray;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            font-family: "楷体";
+            font-size: 16px; /* 适当增大字号 */
+        }
+
+      .section-three.title {
+            font-family: "华文行楷";
+            font-size: 50px; /* 增大“西施浣纱”相关标题字号 */
+        }
+
+      .section-three img {
+            width: 200px;
+            height: auto;
+            margin-left: 20px;
+        }
+
+        /* 第四部分样式 */
+      .section-four {
+            background-color: #e6e6fa;
+            /* 淡紫色，低饱和度 */
+            text-align: center;
+            padding: 15px;
+            font-family: "楷体";
+            font-size: 16px; /* 适当增大字号 */
+        }
+
+      .section-four p {
+            font-family: "华文行楷";
+            font-size: 20px; /* 增大“科普视频”相关标题字号 */
+        }
+
+      .section-four video {
+            display: block;
+            margin: 30px auto;
+            width: 50%;
+            height: auto;
+        }
+
+        /* 动图部分样式 */
+      .gif {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+        }
+
+      .gif ul.GIF {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            justify-content: space-around; /* 让动图均匀分布在水平方向，可根据需求调整布局方式 */
+        }
+
+      .gif ul.GIF li {
+            margin: 0 10px;
+        }
+
+      .gif ul.GIF li img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s ease; /* 添加过渡效果，使放大动画更平滑 */
+        }
+
+      .gif ul.GIF li img:hover {
+            transform: scale(1.2); /* 鼠标悬停时放大动图，这里放大到1.2倍，可按需调整倍数 */
+        }
+
+        /* 最后一部分样式 */
+      .footer {
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-family: "楷体";
+            font-size: 25px; /* 适当增大字号 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <a href="https://baike.baidu.com/item/%E4%B8%9C%E6%96%BD%E6%95%88%E9%A2%A6/232075">东施效颦</a>
+        <a href="https://baike.baidu.com/item/%E8%A5%BF%E6%96%BD%E6%B5%A3%E7%BA%B1?fromModule=lemma_search-box">西施浣纱</a>
+        <a href="https://limin0248.github.io/ooeasy/dsxp1_compressed.mp4">科普视频</a>
+    </div>
+
+    <!-- 第二部分 -->
+    <div class="section-two">
+        <img src="https://limin0248.github.io/ooeasy/dsxp.jpg" alt="示例图片">
+        <div>
+            <p><strong>东施效颦</strong></p>
+            <p><em>东施效颦</em>是一则来源于寓言故事的成语，成语相关典故最早见于《庄子·天运》。其记载：美女西施因为心口疼，便经常手捂胸口，皱着眉头。邻家丑女看见了，觉得姿态很美，也学她的样子，结果丑女更丑了，后人将这个丑女称作东施。</p>
+            <p><strong>【文生图提示语】</strong></p>
+            <p>图片风格为「中国风」，比例 「9:16」，暖调</p>
+            <p><mark>（背景）</mark>越国苎萝村的古朴街巷，石板路蜿蜒向前，两侧屋舍错落有致，粉墙黛瓦在日光映照下，街边有叫卖小吃的摊贩，热气腾腾；远处人影绰绰。</p>
+            <p><mark>（画面主体）</mark>左右两个人，左前方的女子穿着白色素雅罗裙，脸朝右，身姿纤细，双手捂着自己的胸口，眉头轻蹙，嘴唇微微抿起；右后边的妇女穿着红色的罗裙，皮肤暗沉，脸上有雀斑，身体很胖，眼睛小，脸朝左，眉头皱着，双手放在胸口上</p>
+        </div>
+    </div>
+
+    <!-- 第三部分 -->
+    <div class="section-three">
+        <div class="title">
+            <strong><span>西</span></strong>
+            <strong><span>施</span></strong>
+            <strong><span>浣</span></strong>
+            <strong><span>纱</span></strong>
+
+        </div>
+        <ol>
+            <li>图片风格为「中国风」，比例 「1:1」，中景，冷调</li>
+            <li>背景：在一条清澈见底的溪边，后面是石头和树，仿佛仙境一般。</li>
+            <li>画面主体：一位女子身着一袭素雅的古风长裙，裙摆随风轻轻飘动，坐在溪边的石头上。</li>
+            <li>人物：她的面容美丽，皮肤白。乌黑的长发挽起，发丝垂落在脸庞。坐在溪边的石头上，她纤细的双手摆弄着轻纱。轻纱在水中荡漾，泛起涟漪。</li>
+        </ol>
+        <img src="https://limin0248.github.io/ooeasy/xshs.jpg" alt="示例图片">
+    </div>
+
+    <!-- 第四部分 -->
+    <div class="section-four">
+        <p>科普视频</p>
+        <video controls>
+            <source src="https://limin0248.github.io/ooeasy/dsxp1_compressed.mp4">
+            您的浏览器不支持视频播放。
+        </video>
+    </div>
+    <div class="gif">
+        <section>
+            <ul class="GIF">
+                <li><img class="img-style" src="https://limin0248.github.io/ooeasy/huansha.gif">
+                </li>
+                <li><img class="img-style" src="https://limin0248.github.io/ooeasy/liulei.gif">
+                </li>
+                <li><img class="img-style" src="https://limin0248.github.io/ooeasy/change.gif">
+                </li>
+            </ul>
+        </section>
+    </div>
+    <!-- 最后一部分 -->
+    <div class="footer">
+        <p>要快乐做自己呦，我的朋友</p>
+    </div>
+</body>
+
+</html>
