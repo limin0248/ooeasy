@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聆听前辈经验</title>
+    <style>
+        body{
+            background-color: #e3e3e3; /* 设置页面背景颜色 */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* 使所有内容在页面上垂直居中 */
+        }
+        .sidebar {
+            position: fixed;
+            top: 50%; /* 垂直居中 */
+            left: 0;
+            transform: translateY(-50%);
+            background-color: #333;
+            padding: 10px;
+            border-radius: 0 10px 10px 0;
+        }
+        .nav-icon {
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: #5385aa;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            margin: 5px 0;
+            border-radius: 50%;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .nav-icon .icon-name {
+            display: block;
+            font-family: '仿宋', 'FangSong', sans-serif; /* 设置字体为仿宋 */
+            font-size: 16px; /* 字号较小 */
+            color: white; /* 文字颜色为白色 */
+            position: absolute;
+            top: -25px; /* 文字显示在图标上方 */
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+        .image-container{
+            width: 90%; /* 图片容器宽度设置为页面的90%，使图片占据页面更宽的区域 */
+            margin: 20px 0; /* 上下外边距为20px */
+            position: relative; /* 设置相对定位，以便绝对定位的元素相对于它定位 */
+        }
+        .image-container img{
+            width: 100%; /* 图片宽度设置为100%，充满图片容器 */
+            height: auto; /* 图片高度自动调整，保持图片比例 */
+        }
+        .text-container{
+            background-color: #f2f2f2; /* 设置文字容器背景颜色为浅灰色 */
+            width: 75%; /* 文字容器宽度占据页面的3/4 */
+            padding: 20px; /* 内边距为20px */
+            box-sizing: border-box; /* 使padding包含在width内 */
+            margin: 20px 0; /* 上下外边距为20px */
+            font-family: '仿宋', 'FangSong', sans-serif; /* 设置字体为仿宋 */
+            font-size: 24px; /* 增大字号 */
+            line-height: 2; /* 增大行间距 */
+        }
+        .highlight {
+        background-color: #5385aa; /* 高亮颜色 */
+        color: white; /* 文字颜色，可根据需要调整 */
+        padding: 2px 4px; /* 高亮部分的内边距，可根据需要调整 */
+        }
+        .hover-text{
+        position: absolute; /* 绝对定位 */
+        bottom: -500%; /* 初始位置在图片下方 */
+        font-family: '仿宋', 'FangSong', sans-serif; /* 设置字体为仿宋 */
+        font-size: 24px; /* 增大字号 */
+        left: 12.5%; /* 左边距离，使文本框居中 */
+        width: 85%; /* 文本框宽度占据页面的3/4 */
+        background-color: rgba(0, 0, 0, 0.7); /* 深灰色半透明背景 */
+        color: white; /* 文字颜色为白色 */
+        display: flex; /* 使用flex布局 */
+        justify-content: center; /* 水平居中 */
+        align-items: center; /* 垂直居中 */
+        padding: 20px; /* 内边距为20px */
+        box-sizing: border-box; /* 使padding包含在width内 */
+        transition: bottom 0.5s, opacity 0.5s; /* 位置和透明度变化的过渡效果 */
+        opacity: 0; /* 初始状态透明 */
+        }
+        .image-container:hover .hover-text{
+        bottom: 50%; /* 鼠标悬停时，文字框移动到图片正中央 */
+        opacity: 1; /* 鼠标悬停时显示文字框 */
+        transition: bottom 0.5s, opacity 0.5s 0.5s; /* 位置变化0.5s后，透明度变化0.5s */
+        }
+    </style>
+</head>
+<body>
+<!-- 导航栏 -->
+<nav class="sidebar">
+    <a href="image1.png" class="nav-icon" id="icon1">
+        <span class="icon-name">开始</span>
+    </a>
+    <a href="#image2" class="nav-icon" id="icon2">
+        <span class="icon-name">职位</span>
+    </a>
+    <a href="#image3" class="nav-icon" id="icon3">
+        <span class="icon-name">市场</span>
+    </a>
+    <a href="#image4" class="nav-icon" id="icon4">
+        <span class="icon-name">经验</span>
+    </a>
+</nav>
+
+
+
+    <!-- 第四部分开始 -->
+    <div class="image-container">
+        <img src="image4.png" alt="图片4">
+    </div>
+    <div class="text-container">
+        <p><span class="highlight">财经记者前辈们过来人的经验也可以给新人一些启发，</span>笔者总结了小红书中一些财经记者的帖子，一起来看看吧~
+        </p>
+    </div>
+
+    <div class="image-container" style="width: 60%;"> <!-- 调整图片5的大小 -->
+        <img src="image14.png" alt="图片14">
+    </div>
+    <!-- 第四部分结束 -->
+
+    <div class="text">
+    <p style="font-family: '仿宋', 'FangSong', sans-serif; font-size: 35px; background-color: #5385aa; color: white; padding: 10px;">
+        在数字跳跃，信息飞驰的财经世界里，记录时代的脉搏，描绘经济的画卷。谢谢观看~
+    </p>
+    </div>
+</body>
+</html>
